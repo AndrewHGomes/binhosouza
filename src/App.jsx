@@ -4,7 +4,8 @@ const App = () => {
   return (
     <>
       <header>
-        <h1>BINHO SOUZA</h1>
+        <h2>BINHO SOUZA</h2>
+        <img src="/logo.jpg" alt="" />
         <p>Barber Shop</p>
       </header>
       <main>
