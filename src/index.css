@@ -1,0 +1,124 @@
+:root {
+  --primaria: #1a1a1a;
+  --secundaria: #4f4a4a;
+  --textos: #ebebeb;
+  --destaque: #8d2b2b;
+  --detalhe: #a57b4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primaria);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8em;
+  background-image: url("/header-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+header h1 {
+  font-family: Georgia;
+  color: var(--detalhe);
+}
+
+header p {
+  font-family: Impact;
+  color: var(--textos);
+  letter-spacing: 0.2em;
+}
+
+main {
+  padding: 9em 0.5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main h3 {
+  font-family: Georgia;
+  color: var(--secundaria);
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+main #cortes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+main #cortes .corte {
+  width: 6em;
+  height: 4em;
+  border: 2px solid var(--detalhe);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 8px 2px var(--secundaria);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+main .corte:hover {
+  transform: scale(1.5);
+}
+
+main .corte img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+footer h4 {
+  font-family: Georgia;
+  color: var(--textos);
+}
+
+footer address {
+  font-family: sans-serif;
+  color: var(--detalhe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
