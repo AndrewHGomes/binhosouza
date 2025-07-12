@@ -43,6 +43,7 @@ header {
 header h2 {
   font-family: Georgia;
   color: var(--detalhe);
+  letter-spacing: 0.1em;
 }
 
 header img {
